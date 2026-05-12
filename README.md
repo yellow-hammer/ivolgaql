@@ -1,8 +1,8 @@
 # ИволгаQL
 
 [![Лицензия MIT](https://img.shields.io/badge/лицензия-MIT-blue.svg)](LICENSE)
-[![чат Telegram](https://raw.githubusercontent.com/yellow-hammer/ivolgaql/main/resources/badges/telegram-chat.png)](https://t.me/wonder_yellow)
-[![DeepWiki](https://raw.githubusercontent.com/yellow-hammer/ivolgaql/main/resources/badges/deepwiki-badge.png)](https://deepwiki.com/yellow-hammer/ivolgaql)
+[![чат Telegram](resources/badges/telegram-chat.png)](https://t.me/wonder_yellow)
+[![DeepWiki](resources/badges/deepwiki-badge.png)](https://deepwiki.com/yellow-hammer/ivolgaql)
 
 🐦 **ИволгаQL** — по смыслу **игрушечная / учебная СУБД в памяти** с русским **SQL-подобным** синтаксисом (`ВЫБРАТЬ … ИЗ … ГДЕ …`): по TCP уходит **одна строка** запроса, приходит **одна строка** JSON (`ok`, данные, **`bird`**). Это **не** PostgreSQL/MySQL по протоколу и по языку — своё подмножество команд.
 
