@@ -1,0 +1,46 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "ИволгаQL: сервер",
+      "cargo": {
+        "args": ["build", "--bin=ivolgaql", "--package=ivolgaql"],
+        "filter": {
+          "name": "ivolgaql",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "ИволгаQL: клиент (один запрос)",
+      "cargo": {
+        "args": ["build", "--bin=ivolgaql", "--package=ivolgaql"],
+        "filter": {
+          "name": "ivolgaql",
+          "kind": "bin"
+        }
+      },
+      "args": ["client", "-q", "выбрать * из склад"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "ИволгаQL: тесты (lib)",
+      "cargo": {
+        "args": ["test", "--no-run", "--lib", "--package=ivolgaql"],
+        "filter": {
+          "name": "ivolgaql",
+          "kind": "lib"
+        }
+      },
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
